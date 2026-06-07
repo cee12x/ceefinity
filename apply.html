@@ -22,8 +22,12 @@
             <h2 class="text-2xl font-bold mb-2 text-white tracking-tight">Submit Career Profile</h2>
             <p class="text-zinc-500 text-sm mb-8">Please fill out the information architecture parameters below to submit your application to the Ceefinity logistics asset network.</p>
             
-            <form action="https://formspree.io/f/mbdegpwz" method="POST" enctype="multipart/form-data" class="space-y-6">
-                <input type="hidden" name="_next" value="https://ceefinity.com/thank-you.html">
+            <!-- WEB3FORMS CAREERS GATEWAY -->
+            <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" class="space-y-6">
+                <!-- Web3Forms Integration Settings -->
+                <input type="hidden" name="access_key" value="abd02db6-7899-4b1b-9081-0be457809d5d">
+                <input type="hidden" name="redirect" value="https://ceefinity.com/thank-you.html">
+                <input type="hidden" name="from_name" value="Ceefinity Job Applications Desk">
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
