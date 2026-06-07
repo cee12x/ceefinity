@@ -48,9 +48,12 @@
                     <h2 class="text-xl font-bold mb-2 text-white tracking-tight">Request Dispatch Allocation</h2>
                     <p class="text-zinc-500 text-xs mb-6">Complete the logistical profile block below to deploy route setups.</p>
                     
-                    <form action="https://formspree.io/f/xvznkvvb" method="POST" class="space-y-4">
-                        <!-- FIXED REDIRECT ROUTE -->
-                        <input type="hidden" name="_next" value="https://ceefinity.com/thank-you.html">
+                    <!-- WEB3FORMS DISPATCH GATEWAY -->
+                    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                        <!-- Web3Forms Configuration -->
+                        <input type="hidden" name="access_key" value="ead774b2-9698-4dc1-b8eb-160cda3aa45c">
+                        <input type="hidden" name="redirect" value="https://ceefinity.com/thank-you.html">
+                        <input type="hidden" name="from_name" value="Ceefinity Dispatch Desk">
                         
                         <div>
                             <label class="block text-xs uppercase tracking-wider text-zinc-400 font-semibold mb-1">Full Legal Name</label>
